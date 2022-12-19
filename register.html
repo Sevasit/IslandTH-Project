@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" href="4950.jpg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-aos="flip-left" data-aos-delay="600">
+    <div class="contain">
+        <div class="title" data-aos="fade-up">สมัครสมาชิก</div>
+        <form action="#">
+            <div class="user-detail">
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">ชื่อ</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">นามสกุล</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">อีเมล</span>
+                    <input type="email" placeholder="" required>
+                </div>
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">เบอร์โทรศัพท์</span>
+                    <input type="text" placeholder="" maxlength="10" required>
+                </div>
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">รหัสผ่าน</span>
+                    <input type="password" placeholder="" maxlength="13" required>
+                </div>
+                <div class="input-box" data-aos="fade-right" data-aos-delay="800">
+                    <span class="details">ยันยันรหัสผ่าน</span>
+                    <input type="password" placeholder="" maxlength="13" required>
+                </div>
+            </div>
+            <div class="gender-details" data-aos="fade-right" data-aos-delay="900">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">เพศ</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">ชาย</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">หญิง</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">LGBT+</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button" data-aos="fade-right" data-aos-delay="1000">
+                <input type="submit" value="สมัครสมาชิก">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            durations: 800,
+            delay: 300
+        });
+    </script>
+</body>
+
+</html>

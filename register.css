@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Be+Vietnam+Pro:wght@200&family=Open+Sans:wght@600&family=Oswald:wght@300&family=Outfit&family=Prompt:wght@100;300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(13deg, #fd6309, #13d5db);
+    ;
+}
+
+.contain {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.title::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 5px;
+    width: 230px;
+    background: linear-gradient(13deg, #fd6309, #f1bb08);
+}
+
+.contain form .user-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #e45c0e;
+}
+
+.gender-details .gender-title {
+    font-size: 20px;
+    font-size: 500;
+}
+
+.gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: rgb(212, 206, 206);
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #d9d9d9;
+    background: #e45c0e;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    background: linear-gradient(13deg, #fd6309, #f1bb08);
+}
+
+form .button input:hover {
+    background: linear-gradient(-13deg, #fd6309, #f1bb08);
+}
+
+@media(max-width:584px) {
+    .contain {
+        max-width: 100%;
+    }
+    .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .gender-details .category {
+        width: 100%;
+    }
+    .contain form .user-detail {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-detail:-webkit-scrollbar {
+        width: 0;
+    }
+}
